@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,26 +12,29 @@
   <link rel="stylesheet" href="./style.css">
   <title>Calcular Gorgeta</title>
 </head>
+
 <body>
   <div class="container">
     <form>
       <h1>Calculadora de Gorjeta</h1>
-      <label for="">Valor da Conta: </label>
-      <input type="number" name="conta" id="conta">
-      <label for="">Qualidade do serviço: </label>
+      <label for="conta">Valor da Conta: </label>
+      <input type="number" name="conta" id="conta" placeholder="R$">
+      <p class="erro"></p>
+      <label for="opcoes">Qualidade do serviço: </label>
       <select name="opcoes" id="opcoes">
-        <option value="exc">Excelente - 10%</option>
-        <option value="oti">Òtimo - 8%</option>
-        <option value="bom">Bom - 5%</option>
-        <option value="ruim">Ruim - 3%</option>
+        <option value="10">Excelente - 10%</option>
+        <option value="8">Òtimo - 8%</option>
+        <option value="5">Bom - 5%</option>
+        <option value="3">Ruim - 3%</option>
       </select>
       <button>Calcular Gorgeta</button>
-      <label for="valor-total">Valor da Gorjeta:</label>
-      <input type="text" name="valor-total" id="valor-total" readonly>
+      <label for="gorjeta">Valor da Gorjeta:</label>
+      <input type="text" name="gorjeta" id="gorjeta" readonly>
       <label for="total">Valor Total:</label>
       <input type="text" name="total" id="total" readonly>
     </form>
   </div>
   <script src="./script.js"></script>
 </body>
+
 </html>

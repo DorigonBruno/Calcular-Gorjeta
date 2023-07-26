@@ -12,7 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 100vh;
   width: 100vw;
 }
 
@@ -30,7 +30,7 @@ form h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 3rem;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 form label {
@@ -43,7 +43,7 @@ form label {
 
 form input,
 select {
-  margin-bottom: 14px;
+  margin-bottom: 18px;
   height: 40px;
   border: 2px solid #ccc;
   border-radius: 4px;
@@ -52,12 +52,23 @@ select {
   font-weight: 400;
 }
 
+.erro {
+  font-size: 1rem;
+  color: red;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+
 #total,
-#valor-total {
+#gorjeta {
   border-top: none;
   border-left: none;
   border-right: none;
   outline: 0;
+  color: #000;
+  text-align: end;
+  font-size: 1.5rem;
+  padding-right: 20px;
 }
 
 button {
@@ -68,12 +79,12 @@ button {
   background: #36c227;
   color: #fff;
   cursor: pointer;
-  margin-bottom: 10px;
+  margin-bottom: 26px;
   border-radius: 5px;
   font-size: 1rem;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-button:hover{
-  background: #41753B;
+button:hover {
+  background: #41753b;
 }
