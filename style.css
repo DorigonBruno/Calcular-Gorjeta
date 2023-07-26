@@ -5,6 +5,7 @@
 }
 
 body {
+  overflow-x: none;
   background: #ccc;
 }
 
@@ -50,6 +51,7 @@ select {
   padding: 10px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  font-size: 1rem;
 }
 
 .erro {
@@ -87,4 +89,54 @@ button {
 
 button:hover {
   background: #41753b;
+}
+
+@media (max-width: 660px) {
+  form {
+    background: #fff;
+    border-radius: 10px;
+    padding: 18px 40px 20px;
+  }
+  form h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 18px;
+  }
+}
+
+@media (max-width: 460px) {
+  form {
+    background: #fff;
+    border-radius: 10px;
+    padding: 18px;
+  }
+  form h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 18px;
+  }
+  form input,
+  select {
+    margin-bottom: 14px;
+    height: 38px;
+    font-size: 0.875rem;
+  }
+  #total,
+  #gorjeta {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: 0;
+    color: #000;
+    text-align: end;
+    font-size: 1.2rem;
+    padding-right: 20px;
+  }
+  button {
+    padding: 8px;
+    cursor: pointer;
+    margin-bottom: 14px;
+  }
 }
