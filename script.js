@@ -16,8 +16,8 @@ function handleClick(event) {
     erro.innerText = "Insira um número";
   } else {
     erro.innerText = "";
-    valorGorjeta.value = totalGorjeta;
-    valorTotal.value = totalValor;
+    valorGorjeta.value = totalGorjeta.toFixed(2);
+    valorTotal.value = totalValor.toFixed(2);
   }
 }
 
