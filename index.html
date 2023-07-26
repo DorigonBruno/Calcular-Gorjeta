@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:ital,wght@0,700;1,400&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <title>Calcular Gorgeta</title>
 </head>
@@ -14,16 +19,16 @@
       <input type="number" name="conta" id="conta">
       <label for="">Qualidade do serviço: </label>
       <select name="opcoes" id="opcoes">
-        <option value="exc">Execelente - 10%</option>
+        <option value="exc">Excelente - 10%</option>
         <option value="oti">Òtimo - 8%</option>
         <option value="bom">Bom - 5%</option>
         <option value="ruim">Ruim - 3%</option>
       </select>
       <button>Calcular Gorgeta</button>
       <label for="valor-total">Valor da Gorjeta:</label>
-      <input type="text" name="valor-total" id="valor-total">
+      <input type="text" name="valor-total" id="valor-total" readonly>
       <label for="total">Valor Total:</label>
-      <input type="text" name="total" id="total">
+      <input type="text" name="total" id="total" readonly>
     </form>
   </div>
   <script src="./script.js"></script>
